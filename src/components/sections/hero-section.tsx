@@ -1,9 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Github, Linkedin, Twitter } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const profileImageUrl = "https://storage.googleapis.com/maker-studio-5a5f9.appspot.com/user-assets/66849925-546b-4e3f-80d5-d22731c3a649/848e30b6-398b-4b15-99d8-f58c7e974917.png";
+const profileImage = PlaceHolderImages.find((p) => p.id === 'profile-photo');
 
 export default function HeroSection() {
   return (
@@ -18,18 +19,26 @@ export default function HeroSection() {
               Product Manager
             </h2>
             <p className="mt-4 max-w-md text-muted-foreground">
-              Product Manager with 3+ years of experience delivering B2B and B2C software products and platforms. Strong track record of turning complex problems into clear roadmaps, shipped features, and measurable results for both businesses and end users. Skilled in product discovery, data-informed prioritization, and collaborating with cross-functional teams across Engineering, Design, Sales, and Customer Success.
+              Product Manager with 3+ years of experience delivering B2B and B2C
+              software products and platforms. Strong track record of turning
+              complex problems into clear roadmaps, shipped features, and
+              measurable results for both businesses and end users. Skilled in
+              product discovery, data-informed prioritization, and collaborating
+              with cross-functional teams across Engineering, Design, Sales, and
+              Customer Success.
             </p>
             <div className="mt-6 flex gap-4">
               <Button asChild>
-                <Link href="mailto:henryelue@live.com" target="_blank" rel="noopener noreferrer">
+                <Link
+                  href="mailto:henryelue@live.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Get in Touch
                 </Link>
               </Button>
               <Button variant="secondary" asChild>
-                <Link href="#projects">
-                  View Projects
-                </Link>
+                <Link href="#projects">View Projects</Link>
               </Button>
             </div>
             <div className="mt-8 flex justify-center space-x-4 md:justify-start">
@@ -51,22 +60,27 @@ export default function HeroSection() {
                 <Linkedin className="h-6 w-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <Link
+                href="#"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
                 <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
             </div>
           </div>
           <div className="order-first flex items-center justify-center md:order-last">
-            <Image
-              src={profileImageUrl}
-              alt="A professional portrait of a person."
-              data-ai-hint="professional portrait"
-              width={400}
-              height={400}
-              className="h-64 w-64 rounded-full border-4 border-primary/20 object-cover shadow-lg md:h-96 md:w-96"
-              priority
-            />
+            {profileImage && (
+                <Image
+                  src={profileImage.imageUrl}
+                  alt={profileImage.description}
+                  data-ai-hint={profileImage.imageHint}
+                  width={400}
+                  height={400}
+                  className="h-64 w-64 rounded-full border-4 border-primary/20 object-cover shadow-lg md:h-96 md:w-96"
+                  priority
+                />
+            )}
           </div>
         </div>
       </div>
