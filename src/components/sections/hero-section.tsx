@@ -19,7 +19,7 @@ export default function HeroSection() {
               Product Manager
             </h2>
             <p className="mt-4 max-w-md text-muted-foreground">
-            Product Manager with 3+ years of experience delivering B2B and B2C software products and 
+            Product Manager with 3+ years of experience delivering B2B and B2C software products and platforms. Strong track record of turning complex problems into clear roadmaps, shipped features, and measurable results for both businesses and end users. Skilled in product discovery, data-informed prioritization, and collaborating with cross-functional teams across Engineering, Design, Sales, and Customer Success. 
             </p>
             <div className="mt-6 flex gap-4">
               <Button asChild>
