@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-photo",
+      "description": "A professional portrait of a person.",
+      "imageUrl": "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY0MjU2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "Abstract representation of a software project.",
+      "imageUrl": "https://images.unsplash.com/photo-1606836379799-f88b03bc7039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzb2Z0d2FyZSUyMHByb2plY3R8ZW58MHx8fHwxNzY2NTA4NDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "software project"
+    },
+    {
+      "id": "project-2",
+      "description": "A visual representing data analysis or user research.",
+      "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwYW5hbHlzaXN8ZW58MHx8fHwxNzY2NDYzNTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analysis"
+    },
+    {
+      "id": "project-3",
+      "description": "An image showing collaboration or teamwork.",
+      "imageUrl": "https://images.unsplash.com/photo-1669477377105-0736689c9935?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtd29yayUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzY2NTA4NDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teamwork collaboration"
+    }
+  ]
 }
