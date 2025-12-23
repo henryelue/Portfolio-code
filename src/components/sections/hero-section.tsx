@@ -13,13 +13,13 @@ export default function HeroSection() {
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
-              Alex Doe
+              Henry Elue
             </h1>
             <h2 className="mt-2 text-2xl font-medium text-foreground/90 md:text-3xl">
               Product Manager
             </h2>
             <p className="mt-4 max-w-md text-muted-foreground">
-              A passionate Product Manager with a knack for building user-centric products that drive business growth. Experienced in agile methodologies, user research, and data-driven decision making.
+            Product Manager with 3+ years of experience delivering B2B and B2C software products and 
             </p>
             <div className="mt-6 flex gap-4">
               <Button asChild>
